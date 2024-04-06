@@ -184,7 +184,7 @@ def user_stats(df: pd.DataFrame):
         gender_count = df['Gender'].value_counts().count()
         print(f'Counts of Gender: {gender_count}')
     else:
-        print('Gender stats cannot be calculated because Gender does not appear in the dataframe')
+        print('Gender stats cannot be calculated because Gender does not appear in the dataframe.')
 
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
@@ -197,7 +197,7 @@ def user_stats(df: pd.DataFrame):
         most_common_birth_year = df['Birth Year'].mode()[0]
         print(f'Most Common Year of Birth: {most_common_birth_year}')
     else:
-        print('Birth Year stats cannot be calculated because Birth Year does not appear in the dataframe')
+        print('Birth Year stats cannot be calculated because Birth Year does not appear in the dataframe.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
